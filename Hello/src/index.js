@@ -1,20 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
+const name = "Aniket";
+const currDate = new Date().toLocaleDateString();
+const currTime = new Date().toLocaleTimeString();
 ReactDOM.render(
   <div>
-  <h1>Aniket pratice</h1>
-  <p>Here the fav. 5</p>
-  <ol>
-  <li>Dark</li>
-  <li>movie</li>
-  <li>Song</li>
-  <li>Series</li>
-  <li>Macth</li>
-  </ol>
-  </div>
-  ,document.getElementById("root")
+  <h1>
+  Hello, my name is {name}</h1>
+  <p>Current date is = {currDate}</p>
+  <p>Current time  is = {currTime}</p>
 
+  </div>,
+  document.getElementById("root")
 );
-  
+
 
